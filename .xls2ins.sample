@@ -1,0 +1,19 @@
+BookConfigs:
+  - BookNameRegExp: test.*.xlsx
+    SheetConfigs:
+      - SheetName: サンプル
+        StartRow: 3
+        SqlFormat: "insert into sample values('%s', '%s', '%s', '%s');"
+        SqlArgCols:
+          - C
+          - D
+          - F
+          - G
+      - SheetName: サンプル2
+        StartRow: 4
+        SqlFormat: "insert into sample2 values('%s', '%s', '%s', '%s');"
+        SqlArgCols:
+          - D
+          - E
+          - G
+          - H
